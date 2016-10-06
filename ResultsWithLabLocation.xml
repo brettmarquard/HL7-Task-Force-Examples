@@ -79,12 +79,6 @@
 							<performer typeCode="PRF">
 								<assignedEntity>
 									<id root="2.16.840.1.113883.19.5"/>
-									<addr>
-										<streetAddressLine>2474, Rocky place</streetAddressLine>
-										<city>Beaverton</city>
-										<state>OR</state>
-									</addr>
-									<telecom value="tel:+1-(555)666-1002"/>
 									<representedOrganization>
 										<name>Value Labs</name>
 										<telecom value="tel:+1-(555)666-1002"/>
