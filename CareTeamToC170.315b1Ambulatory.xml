@@ -19,12 +19,12 @@ When the document is about a single encounter, the componentOf/encompassingEncou
 				<low value="20150622100000-0600"/>
 				<high value="20150622103000-0600"/>
 			</effectiveTime>
-			<!-- Preferably, the patient’s key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors (CONF:16753).
+			<!-- Preferably, the patient’s key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors.
 					there are two Care Team members, so two performer elements. 
 								 -->
 			<performer typeCode="PRF">
 				<!-- we infer from the test data description that Dr Davis is the PCP -->
-				<!-- MAY provide functionCode CONF:16818-->
+				<!-- MAY provide functionCode -->
 				<functionCode codeSystem="2.16.840.1.113883.5.88" code="PCP" displayName="Primary Care Physician"/>
 				<!-- we do not know how long Dr Davis has been associated with the patient	-->
 				<time>
