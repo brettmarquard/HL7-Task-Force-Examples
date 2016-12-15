@@ -5,10 +5,10 @@
      Summary of examples:
 
 		1. PRN with a coded precondition  
-   		Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours PRN for joint pain
+   		Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours as needed for joint pain
 
 		2. Instructions; similar to above but NOT a PRN 
-		Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours with food
+		Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours. Do not take on an empty stomach.
 
 		3. Indication; again, NOT a PRN - 
 		Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours for joint pain
@@ -47,7 +47,7 @@
 						<content ID="MedicationName_42424242">Ibuprofen 600mg Oral Tablet</content>
 					</td>
 					<td>
-						<content ID="MedicationSig_42424242">take 1 tablet Every 6 Hours <content ID="MedicationInstruction_42424242">with food</content></content>
+						<content ID="MedicationSig_42424242">Take 1 tablet Every 6 Hours. <content ID="MedicationInstruction_42424242">Do not take on an empty stomach.</content></content>
 					</td>
 					<td>600 MG</td>
 					<td>Mar-10-2013 - </td>
@@ -163,10 +163,6 @@
 			<effectiveTime xsi:type="PIVL_TS" operator="A">
 				<period value="6" unit="h"/>
 			</effectiveTime>
-			<!-- This is the event to take with food -->
-			<effectiveTime xsi:type="EIVL_TS" operator="A">
-        			<event code="C"/>
-     			 </effectiveTime>
 			<doseQuantity value="1"/>
 			<consumable typeCode="CSM">
 				<manufacturedProduct classCode="MANU">
