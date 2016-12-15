@@ -8,14 +8,14 @@ Care Team
 This example includes members of the Care Team who are performing care services in the documentationOf/serviceEvent.
 Based on current implementation guidance, additional active members (not involved in these care services) of the patient's 
 Care Team should be represented in documentationOf/serviceEvent.
-When the document is about a single encounter, the componentOf/encompassingEncounter is present, and may be more appropriate for members responsible
+When the document is about a single encounter, the componentOf/encompassingEncounter is present, and would be more appropriate for members responsible
 for or participating in the encounter.
  -->
 <documentationOf>
 		<serviceEvent classCode="PCPR">
 			<id extension="5283815" root="1.3.6.1.4.1.22812.4.99930.4.3.8"/>
 			<!-- The service event being documented is shown as happening from 10 - 10:30am Eastern on 6/22/2015. 
-			     The date is in the Test Data for §170.314(b)(2) Transitions of care the test data. -->
+			     The date is in the Test Data for §170.315(b)(1) Transitions of care the test data. -->
 			<effectiveTime>
 				<low value="20150622100000-0600"/>
 				<high value="20150622103000-0600"/>
@@ -24,7 +24,7 @@ for or participating in the encounter.
 					there are two Care Team members, so two performer elements. 
 								 -->
 			<performer typeCode="PRF">
-				<!-- we infer from the test data description that Dr Khan is the PCP -->
+				<!-- we infer from the test data description that Dr Davis is the PCP -->
 				<!-- MAY provide functionCode CONF:16818-->
 				<functionCode codeSystem="2.16.840.1.113883.5.88" code="PCP" displayName="Primary Care Physician"/>
 				<!-- we do not know how long Dr Davis has been associated with the patient	-->
