@@ -5,10 +5,20 @@ Care Team
 •	Dr Albert Davis, 2472 Rocky place, Beaverton, OR 97006
 •	Tracy Davis, 555-555-1002, 2472 Rocky place, Beaverton, OR 97006
 
-This example includes members of the Care Team who are performing care services in the documentationOf/serviceEvent.
-Based on current implementation guidance, additional active members (not involved in these care services) of the patient's 
-Care Team should be represented in documentationOf/serviceEvent.
-When the document is about a single encounter, the componentOf/encompassingEncounter is also present, and would indicate members participating in the encounter.
+This example includes members of the Care Team in the documentationOf/serviceEvent.
+
+From C-CDA R2.1 we have this statement:
+	A serviceEvent represents the main act being documented, such as a colonoscopy or a cardiac stress study. In a provision of healthcare serviceEvent, the care providers, PCP, or other longitudinal providers, are recorded within the serviceEvent.
+
+and for serviceEvent/performer the guide says:
+	The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient’s key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors
+
+For single encounter events, the guide says:
+	If the document is about a single encounter, the providers associated can be recorded in the componentOf/encompassingEncounter template. 
+
+Thus, based on current implementation guidance, and to provide one consistent location for all members of the Care Team, we adopt the following:
+	1) documentationOf/serviceEvent contains the list of all healthcare care team members
+	2) additionally, when documenting a single encounter, the componentOf/encompassingEncounter may be used to document any subset of the whole care team that were active participants in the encounter
  -->
 <documentationOf>
 		<serviceEvent classCode="PCPR">
