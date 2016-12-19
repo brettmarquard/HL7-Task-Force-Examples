@@ -16,9 +16,9 @@ and for serviceEvent/performer the guide says:
 For single encounter events, the guide says:
 	If the document is about a single encounter, the providers associated can be recorded in the componentOf/encompassingEncounter template. 
 
-Thus, based on current implementation guidance, and to provide one consistent location for all members of the Care Team, we adopt the following:
-	1) documentationOf/serviceEvent contains the list of all healthcare care team members
-	2) additionally, when documenting a single encounter, the componentOf/encompassingEncounter may be used to document any subset of the whole care team that were active participants in the encounter
+Thus, based on current implementation guidance, and to provide one consistent location for provider members of the healthcare care team, we adopt the following:
+	1) documentationOf/serviceEvent contains the list of all provider members of the healthcare care team
+	2) additionally, when documenting a single encounter, the componentOf/encompassingEncounter may be used to document any subset of the providers on the care team that were active participants in the encounter
  -->
 <documentationOf>
 		<serviceEvent classCode="PCPR">
