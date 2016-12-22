@@ -14,11 +14,7 @@ and for serviceEvent/performer the guide says:
 	The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient’s key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors
 
 For single encounter events, the guide says:
-	If the document is about a single encounter, the providers associated can be recorded in the componentOf/encompassingEncounter template. 
-
-Thus, based on current implementation guidance, and to provide one consistent location for provider members of the healthcare care team, we adopt the following:
-	1) documentationOf/serviceEvent contains the list of all provider members of the healthcare care team
-	2) additionally, when documenting a single encounter, the componentOf/encompassingEncounter may be used to document any subset of the providers on the care team that were active participants in the encounter
+	If the document is about a single encounter, the providers associated can be recorded in the componentOf/encompassingEncounter template. The componentOf/encompassingEncounter may be used to document any subset of the providers on the care team that were active participants in the encounter.
  -->
 <documentationOf>
 		<serviceEvent classCode="PCPR">
