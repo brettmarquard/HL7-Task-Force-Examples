@@ -157,7 +157,6 @@
 		</text>
 		<!-- The entry elements below would not likely ever be found all in one section. They are here simply to help illustrate how to reference the human readable text. Examples of real content are given in comments but the text and any content within the entry elements and children are all fictitious. -->
 		<!-- this first entry illustrates an act, the basic class of the RIM, but in C-CDA terms the act is used for both Allergy and Problem Concerns, Authorization Activity, Comment Activity and a few other acts.
-							we'll illustrate a simple act first, then later a more complex act that wraps an observation.
 -->
 		<entry>
 			<!-- illustrating a simple act -->
