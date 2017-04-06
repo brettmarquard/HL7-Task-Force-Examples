@@ -5,8 +5,8 @@
 		<text>
 			<!-- The text in this section is created strictly to illustrate how discrete entry child elements make references into the human readable text. A mixture of paragraph, table, and lists will be used for this text section, but their use is to just illustrate different referncing techniques. -->
 			<!-- this paragraph is used for a simple act -->
-			<paragraph ID="simpleActFullTextReference">
-				<content ID="simpleActCodeReference">Lorem ipsum dolor sit amet</content>, consectetur adipiscing elit.</paragraph>
+			<paragraph ID="simpleActFullTextReference1">
+				<content ID="simpleActCodeReference1">Lorem ipsum dolor sit amet</content>, consectetur adipiscing elit.</paragraph>
 		</text>
 		<!-- this illustrates an act, the basic class of the RIM, but in C-CDA terms the act is used for both Allergy and Problem Concerns, Authorization Activity, Comment Activity and a few other acts.
 -->
@@ -24,7 +24,7 @@
 											notice that the referenced text is similar to but different than the @displayName  of the code element
 											from an interoperability perspective, this pattern is a SHOULD as access to the human readable text reflecting the (code, codeSystem) in use is beneficial to consuming systems
 									-->
-						<reference value="#simpleActCodeReference"/>
+						<reference value="#simpleActCodeReference1"/>
 					</originalText>
 				</code>
 				<!-- when present, the text/reference points to the entire text of the act 
